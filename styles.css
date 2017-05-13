@@ -1,5 +1,5 @@
 body {
-  margin: 1vh;
+  margin: 0;
   background-color: hsl(302, 10%, 99%);
   font-family: 'Varela Round', sans-serif;
   font-size: 5vh;
@@ -28,13 +28,15 @@ button {
 }
 
 main {
-  width: 90vh;
-  height: 90vh;
+  /* 16:9 Portrait */
+  width: 56.25vh;
+  height: 92vh; /* would think this should be 100? */
   background-color: hsl(192, 100%, 50%);
   border-radius: 1%;
   text-align: center;
   padding: 4vh;
   line-height: 16vh;
+  margin: 0 auto;
 }
 
 button:active {
