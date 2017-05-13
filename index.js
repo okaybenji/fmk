@@ -2,12 +2,16 @@ const $ = (queryString) => document.querySelector(queryString);
 
 const shuffle = (array) => [...array].sort(() => 0.5 - Math.random());
 
-const randomize = (peeps) => {
-  const shuffled = shuffle(peeps);
+let shuffledPeeps = [];
 
-  $('#a').innerHTML = shuffled[0];
-  $('#b').innerHTML = shuffled[1];
-  $('#c').innerHTML = shuffled[2];
+const grabSomePeeps = () => {
+  if (shuffledPeeps.length < 3) {
+    shuffledPeeps = shuffle(peeps);
+  }
+
+  $('#a').innerHTML = shuffledPeeps.pop();
+  $('#b').innerHTML = shuffledPeeps.pop();
+  $('#c').innerHTML = shuffledPeeps.pop();
 };
 
 const peeps = [
@@ -255,4 +259,4 @@ const peeps = [
   'Zoë Saldana',
 ];
 
-randomize(peeps);
+grabSomePeeps();
