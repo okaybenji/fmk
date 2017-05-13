@@ -18,6 +18,7 @@ main {
 
 h1 {
   display: inline;
+  color: rgba(0, 0, 0, 0.125);
 }
 
 #peeps {
@@ -41,10 +42,6 @@ a:hover {
   color: rgba(0, 0, 0, 0.25);
 }
 
-a:active {
-  color: rgba(0, 0, 0, 0.5);
-}
-
 button {
   margin-top: 2vh;
   border: none;
@@ -55,14 +52,15 @@ button {
   font-size: 0.8em;
   font-family: 'Varela Round', sans-serif;
   padding: 0%; /* force iOS button width */
-}
-
-button:hover {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-button:active {
+button:hover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 button:focus {
