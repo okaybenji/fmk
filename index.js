@@ -9,9 +9,11 @@ const grabSomePeeps = () => {
     shuffledPeeps = shuffle(peeps);
   }
 
-  $('#a').innerHTML = shuffledPeeps.pop();
-  $('#b').innerHTML = shuffledPeeps.pop();
-  $('#c').innerHTML = shuffledPeeps.pop();
+  ['#a', '#b', '#c'].forEach((peep) => {
+    const peepName = shuffledPeeps.pop();
+    const html = `<a href=https://en.wikipedia.org/wiki/${encodeURIComponent(peepName)} target="_new">${peepName}</a>`;
+    $(peep).innerHTML = html;
+  });
 };
 
 const peeps = [

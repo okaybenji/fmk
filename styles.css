@@ -6,6 +6,17 @@ body {
   color: hsl(302, 10%, 99%);
 }
 
+main {
+  /* 16:9 Portrait */
+  width: 56.25vh;
+  height: 92vh; /* would think this should be 100? */
+  background-color: hsl(192, 100%, 50%);
+  border-radius: 1%;
+  text-align: center;
+  padding: 4vh;
+  margin: 0 auto;
+}
+
 h1 {
   display: inline;
 }
@@ -22,6 +33,11 @@ h1 {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button {
   margin-top: 2vh;
   border: none;
@@ -35,21 +51,10 @@ button {
   padding: 0%; /* force iOS button width */
 }
 
-main {
-  /* 16:9 Portrait */
-  width: 56.25vh;
-  height: 92vh; /* would think this should be 100? */
-  background-color: hsl(192, 100%, 50%);
-  border-radius: 1%;
-  text-align: center;
-  padding: 4vh;
-  margin: 0 auto;
-}
-
 button:active {
   background-color: hsl(192, 100%, 10%);
 }
 
 button:focus {
-  outline:0;
+  outline: 0;
 }
