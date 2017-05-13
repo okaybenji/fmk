@@ -10,7 +10,6 @@ main {
   /* 16:9 Portrait */
   width: 56.25vh;
   height: 92vh; /* would think this should be 100? */
-  background-color: hsl(192, 100%, 50%);
   border-radius: 1%;
   text-align: center;
   padding: 4vh;
@@ -38,10 +37,17 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+a:active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 button {
   margin-top: 2vh;
   border: none;
-  color: hsl(192, 100%, 50%);
   background-color: hsl(302, 10%, 99%);
   border-radius: 100%;
   width: 20vh;
@@ -51,8 +57,12 @@ button {
   padding: 0%; /* force iOS button width */
 }
 
+button:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 button:active {
-  background-color: hsl(192, 100%, 10%);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 button:focus {

@@ -2,9 +2,12 @@ const $ = (queryString) => document.querySelector(queryString);
 
 const shuffle = (array) => [...array].sort(() => 0.5 - Math.random());
 
+const randomColor = () => `hsl(${Math.random() * 360}, 100%, 40%)`;
+
 let shuffledPeeps = [];
 
 const grabSomePeeps = () => {
+  // Refill & randomize when we run out of peeps.
   if (shuffledPeeps.length < 3) {
     const peeps = [
       'Al Roker',
@@ -253,11 +256,17 @@ const grabSomePeeps = () => {
     shuffledPeeps = shuffle(peeps);
   }
 
+  // Grab the next three peeps.
   ['#a', '#b', '#c'].forEach((peep) => {
     const peepName = shuffledPeeps.pop();
     const html = `<a href=https://en.wikipedia.org/wiki/${encodeURIComponent(peepName)} target="_new">${peepName}</a>`;
     $(peep).innerHTML = html;
   });
+
+  // Randomize the color.
+  const color = randomColor()
+  $('main').style.background = color;
+  $('button').style.color = color;
 };
 
 grabSomePeeps();
