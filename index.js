@@ -1,6 +1,4 @@
-const $ = (...args) => {
-  return document.querySelector(...args);
-};
+const $ = (queryString) => document.querySelector(queryString);
 
 const shuffle = (array) => [...array].sort(() => 0.5 - Math.random());
 
