@@ -1,0 +1,42 @@
+body {
+  margin: 1vh;
+  background-color: hsl(302, 10%, 99%);
+  font-family: 'Varela Round', sans-serif;
+  font-size: 5vh;
+  color: hsl(302, 10%, 99%);
+}
+
+h1 {
+  display: inline;
+}
+
+div {
+  text-transform: uppercase;
+}
+
+button {
+  margin-top: 2vh;
+  border: none;
+  color: hsl(192, 100%, 50%);
+  background-color: hsl(302, 10%, 99%);
+  border-radius: 100%;
+  width: 20vh;
+  height: 20vh;
+  font-size: 0.8em;
+  font-family: 'Varela Round', sans-serif;
+  padding: 0%; /* force iOS button width */
+}
+
+main {
+  width: 90vh;
+  height: 90vh;
+  background-color: hsl(192, 100%, 50%);
+  border-radius: 1%;
+  text-align: center;
+  padding: 4vh;
+  line-height: 16vh;
+}
+
+button:active {
+  background-color: hsl(192, 100%, 10%);
+}
