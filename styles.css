@@ -10,8 +10,16 @@ h1 {
   display: inline;
 }
 
-div {
+#peeps {
+  padding: 6vh 0;
+}
+
+.peep {
   text-transform: uppercase;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
@@ -35,10 +43,13 @@ main {
   border-radius: 1%;
   text-align: center;
   padding: 4vh;
-  line-height: 16vh;
   margin: 0 auto;
 }
 
 button:active {
   background-color: hsl(192, 100%, 10%);
+}
+
+button:focus {
+  outline:0;
 }
