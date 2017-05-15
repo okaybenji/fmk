@@ -270,7 +270,7 @@ const grabSomePeeps = () => {
   });
 
   // Randomize the color.
-  const color = randomColor()
+  const color = randomColor();
   $('main').style.background = color;
   $('button').style.color = color;
 };
