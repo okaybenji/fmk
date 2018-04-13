@@ -7,10 +7,6 @@ body {
 }
 
 main {
-  /* 16:9 Portrait */
-  width: 56.25vh;
-  height: 92vh; /* would think this should be 100? */
-  border-radius: 1%;
   text-align: center;
   padding: 4vh;
   margin: 0 auto;
